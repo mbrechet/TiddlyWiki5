@@ -508,22 +508,21 @@ button.tc-untagged-label {
 	}
 
 	.tc-sidebar-scrollable {
-		position: fixed;
 		top: {{$:/themes/tiddlywiki/vanilla/metrics/storytop}};
 		left: {{$:/themes/tiddlywiki/vanilla/metrics/storyright}};
 		bottom: 0;
 		right: 0;
+		float:left;
+		width:300px;
 		overflow-y: auto;
 		overflow-x: auto;
 		-webkit-overflow-scrolling: touch;
-		margin: 0 0 0 -42px;
 		padding: 71px 0 28px 42px;
 	}
 
 	.tc-story-river {
 		position: relative;
-		left: {{$:/themes/tiddlywiki/vanilla/metrics/storyleft}};
-		top: {{$:/themes/tiddlywiki/vanilla/metrics/storytop}};
+		float:left;
 		width: {{$:/themes/tiddlywiki/vanilla/metrics/storywidth}};
 		padding: 42px 42px 42px 42px;
 	}
@@ -614,7 +613,7 @@ button.tc-untagged-label {
 @media (min-width: {{$:/themes/tiddlywiki/vanilla/metrics/sidebarbreakpoint}}) {
 	.tc-tiddler-frame {
 		padding: 28px 42px 42px 42px;
-		width: {{$:/themes/tiddlywiki/vanilla/metrics/tiddlerwidth}};
+		width: calc(95vw - 300px);
 		border-radius: 2px;
 	}
 
