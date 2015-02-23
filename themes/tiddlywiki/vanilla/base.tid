@@ -397,7 +397,7 @@ button.tc-untagged-label {
 
 .tc-topbar-right {
 	top: 5px;
-	right: 29px;
+	left: 35px;
 }
 
 .tc-topbar button {
@@ -528,9 +528,13 @@ button.tc-untagged-label {
 	}
 
 <<if-no-sidebar "
+	
+	.tc-sidebar-scrollable{
+		padding:0;
+	}
 
 	.tc-story-river {
-		width: auto;
+		width: 100%;
 	}
 
 ">>
